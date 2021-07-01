@@ -1,0 +1,160 @@
+
+.navbar {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.leftnav {
+    float: left;
+    position: relative;
+    text-align: left;
+    left: 40px;
+}
+
+.leftnav a {
+    color: black;
+    text-decoration: none;
+}
+
+.leftnav a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.rightnav {
+    float: right;
+    position: relative;
+    right: 40px;
+}
+
+.dropbtn {
+    color: black;
+    background-color: white;
+    border: none;
+    text-align: left;
+}
+
+.dropcn {
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 1px 2px 2px 1px gray;
+}
+
+.dropcn a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropcn a:hover {
+    background-color: lightgray;
+}
+
+.dropdown:hover .dropcn {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: lightblue;
+}
+
+.rightnav a {
+    color: black;
+    font-weight: bold;
+}
+
+.title {
+    position: relative;
+    text-align: center;
+    margin: 40px 40px;
+}
+
+.info {
+    margin: 5px 40px 30px;
+}
+
+.info a {
+    color: blue;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 600;
+}
+
+h2 {
+    color: rgb(21, 124, 221);
+    font-weight: normal;
+}
+
+h3 {
+    color: rgb(21, 124, 221);
+    font-weight: normal;
+}
+
+iframe {
+    float: left;
+    margin-left: 40px;
+}
+
+.vid {
+    display: inline-block;
+    position: relative;
+}
+
+.viddesc {
+    float: right;
+    margin-left: 20px;
+    margin-right: 40px;
+    inline-size: 290px;
+    overflow: break-word;
+}
+
+.foot {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    border-collapse: collapse;
+}
+
+.foot th {
+    text-align: left;
+}
+
+#firstrow {
+    background-color: paleturquoise;
+    border-top: 3px white solid;
+    border-bottom: 3px white solid;
+    padding: 20px;
+}
+
+#secrow {
+    background-color: lightblue;
+    border-top: 3px white solid;
+    border-bottom: 3px white solid;
+    padding: 20px;
+}
+
+#thirdrow {
+    background-color: blue;
+    color: white;
+    border-top: 3px white solid;
+    border-bottom: 3px white solid;
+    text-align: center;
+    padding: 20px;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
