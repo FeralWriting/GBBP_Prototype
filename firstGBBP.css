@@ -7,6 +7,8 @@
     padding: 0px;
     list-style: none;
     margin-top: 40px;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .leftnav {
@@ -19,6 +21,7 @@
 .leftnav a {
     color: black;
     text-decoration: none;
+    font-family: "Montserrat";
 }
 
 .leftnav a:hover {
@@ -37,6 +40,8 @@
     background-color: white;
     border: none;
     text-align: left;
+    font-family: "Montserrat";
+    font-size: 16px;
 }
 
 .dropcn {
@@ -98,6 +103,7 @@
 /*This isn't working, fix it*/
 .tools a:hover {
     border: grey dotted 1px;
+    text-decoration: underline;
 }
 
 figcaption {
@@ -108,12 +114,15 @@ figcaption {
 
 h1 {
     font-weight: 500;
-    font-size: 600;
+    font-size: 53px;
+    font-family: "Raleway";
 }
 
 h2 {
     color: rgb(21, 124, 221);
-    font-weight: normal;
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .contacts {
@@ -171,7 +180,7 @@ h2 {
 }
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 
