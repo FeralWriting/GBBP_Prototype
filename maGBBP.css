@@ -39,7 +39,7 @@
     float: right;
     position: relative;
     right: 40px;
-    padding: 0px 5px;
+    padding: 0px 10px;
 }
 
 .dropbtn {
@@ -97,6 +97,10 @@
     color: blue;
 }
 
+.info a:hover {
+    text-decoration: none;
+}
+
 .tools {
     list-style: none;
     display: flex;
@@ -104,42 +108,11 @@
     flex-wrap: wrap;
 }
 
-.fig1 {
-    position: relative;
-}
-
-.fig1:hover .overlay {
-    opacity: 1;
-}
-
-.fig1 img {
-    display: block;
-    width: 100%;
-    height: auto;
-    z-index: 1;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    right: 0;
-    width: 100%;
-    background: gray;
-    opacity: 0;
-    transition: .5s ease;
-    z-index: 2;
-}
-
 .tools a:link {
     text-decoration: none;
 }
 
-/*This isn't working, fix it*/
 .tools a:hover {
-    border: grey dotted 1px;
     text-decoration: underline;
 }
 
@@ -160,6 +133,7 @@ h2 {
     font-family: "Raleway";
     font-weight: 500;
     font-size: 20px;
+    padding: 5px 0px;
 }
 
 .contacts {
@@ -167,6 +141,7 @@ h2 {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin: 15px 0px;
 }
 
 .contacts img {
@@ -178,6 +153,10 @@ h2 {
     text-decoration: none;
     color: black;
     text-align: center;
+}
+
+.contacts a:hover {
+    text-decoration: underline;
 }
 
 .foot {
@@ -192,24 +171,23 @@ h2 {
 
 .foot th {
     text-align: left;
+    font-weight: 600;
 }
 
 th, td {
-    padding: 10px;
+    padding: 5px;
 }
 
 #firstrow {
     background-color: paleturquoise;
     border-top: 3px white solid;
     border-bottom: 3px white solid;
-    padding: 20px;
 }
 
 #secrow {
     background-color: lightblue;
     border-top: 3px white solid;
     border-bottom: 3px white solid;
-    padding: 50px;
 }
 
 #thirdrow {
@@ -218,13 +196,15 @@ th, td {
     border-top: 3px white solid;
     border-bottom: 3px white solid;
     text-align: center;
-    padding: 20px;
 }
 
 td a {
-    text-decoration: none;
     color: black;
-    font-weight: bold;
+    font-weight: 700;
+}
+
+td a:hover {
+    text-decoration: none;
 }
 
 * {

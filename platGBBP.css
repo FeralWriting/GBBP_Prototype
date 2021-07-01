@@ -1,4 +1,10 @@
 
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .navbar {
     display: inline-block;
     text-align: center;
@@ -34,6 +40,7 @@
     float: right;
     position: relative;
     right: 40px;
+    padding: 0px 10px;
 }
 
 .dropbtn {
@@ -91,6 +98,14 @@
     color: blue;
 }
 
+.info a:hover {
+    text-decoration: none;
+}
+
+.info .short {
+    padding: 5px 0px;
+}
+
 h1 {
     font-weight: 500;
     font-size: 53px;
@@ -102,12 +117,14 @@ h2 {
     font-family: "Raleway";
     font-weight: 500;
     font-size: 20px;
+    padding: 5px 0px;
 }
 
 h3 {
     color: rgb(21, 124, 221);
     font-weight: 500;
     font-family: "Raleway";
+    padding: 5px 0px;
 }
 
 iframe {
@@ -140,20 +157,23 @@ iframe {
 
 .foot th {
     text-align: left;
+    font-weight: 600;
+}
+
+th, td {
+    padding: 5px;
 }
 
 #firstrow {
     background-color: paleturquoise;
     border-top: 3px white solid;
     border-bottom: 3px white solid;
-    padding: 20px;
 }
 
 #secrow {
     background-color: lightblue;
     border-top: 3px white solid;
     border-bottom: 3px white solid;
-    padding: 20px;
 }
 
 #thirdrow {
@@ -162,10 +182,17 @@ iframe {
     border-top: 3px white solid;
     border-bottom: 3px white solid;
     text-align: center;
-    padding: 20px;
+}
+
+td a {
+    color: black;
+    font-weight: 700;
+}
+
+td a:hover {
+    text-decoration: none;
 }
 
 * {
-    font-family: "Open Sans", "Raleway", Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
-
