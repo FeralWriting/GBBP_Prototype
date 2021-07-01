@@ -1,4 +1,10 @@
 
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .navbar {
     display: inline-block;
     text-align: center;
@@ -33,6 +39,7 @@
     float: right;
     position: relative;
     right: 40px;
+    padding: 0px 5px;
 }
 
 .dropbtn {
@@ -94,6 +101,36 @@
     list-style: none;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.fig1 {
+    position: relative;
+}
+
+.fig1:hover .overlay {
+    opacity: 1;
+}
+
+.fig1 img {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    right: 0;
+    width: 100%;
+    background: gray;
+    opacity: 0;
+    transition: .5s ease;
+    z-index: 2;
 }
 
 .tools a:link {
@@ -129,6 +166,7 @@ h2 {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .contacts img {
@@ -156,6 +194,10 @@ h2 {
     text-align: left;
 }
 
+th, td {
+    padding: 10px;
+}
+
 #firstrow {
     background-color: paleturquoise;
     border-top: 3px white solid;
@@ -167,7 +209,7 @@ h2 {
     background-color: lightblue;
     border-top: 3px white solid;
     border-bottom: 3px white solid;
-    padding: 20px;
+    padding: 50px;
 }
 
 #thirdrow {
@@ -177,6 +219,12 @@ h2 {
     border-bottom: 3px white solid;
     text-align: center;
     padding: 20px;
+}
+
+td a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
 * {
