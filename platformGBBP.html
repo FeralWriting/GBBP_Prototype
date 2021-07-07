@@ -4,7 +4,8 @@
         <link rel="stylesheet" type="text/css" href="platGBBP.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+        <script defer type="text/javascript" src="maiGBBP.js"></script>
     </head>
     <body>
         <header>
@@ -15,8 +16,8 @@
                         <div class="dropdown">
                             <button class="dropbtn">GBBP Node Managers</button>
                             <div class="dropcn">
-                                <a href="">Filler</a>
-                                <a href="">Filler</a>
+                                <a href="#">Filler</a>
+                                <a href="#">Filler</a>
                             </div>
                         </div>
                     </li>
@@ -24,8 +25,8 @@
                         <div class="dropdown">
                             <button class="dropbtn">Developers</button>
                             <div class="dropcn">
-                                <a href="">Filler</a>
-                                <a href="">Filler</a>
+                                <a href="#">Filler</a>
+                                <a href="#">Filler</a>
                             </div>
                         </div>
                     </li>
@@ -51,37 +52,72 @@
             <div class="info">
                 <h2>Integrating with the GBBP Blockchain</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                <p><a href="">Review GBA Quality Standards</a></p>
-                <p><a href="">Detailed Instructions</a></p>
-                <p><a href="">Request Integration Approval</a></p>
+                <p><a href="#">Review GBA Quality Standards</a></p>
+                <p><a href="#">Detailed Instructions</a></p>
+                <p><a href="#">Request Integration Approval</a></p>
             </div>
             <div class="info">
                 <h2>Deploying Your Smart Contract</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                <p><a href="">Review GBA Quality Standards</a></p>
-                <p><a href="">Detailed Instructions</a></p>
-                <p><a href="">Request Integration Approval</a></p>
+                <p><a href="#">Review GBA Quality Standards</a></p>
+                <p><a href="#">Detailed Instructions</a></p>
+                <p><a href="#">Request Integration Approval</a></p>
             </div>
             <div class="info">
                 <h2>Section Heading</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                <p class="short"><a href="">Lorem ipsum dolor:</a> Consectetur adipiscing elit, sed do eiusmod tempor</p>
-                <p class="short"><a href="">Sit amet:</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                <p class="short"><a href="">Consectetur adipiscing elit:</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                <p class="short"><a href="">Ut enim ad minim veniam:</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                <p class="short"><a href="#">Lorem ipsum dolor:</a> Consectetur adipiscing elit, sed do eiusmod tempor</p>
+                <p class="short"><a href="#">Sit amet:</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                <p class="short"><a href="#">Consectetur adipiscing elit:</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                <p class="short"><a href="#">Ut enim ad minim veniam:</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+            </div>
+            <div class="iss-modal">
+                <div class="modal-con">
+                    <div onclick='closeModal()' class="close">+</div>
+                    <form onsubmit='event.preventDefault(); handleSubmit()' id='form' action="">
+                        <h2>User Information</h2>
+                        <label class="user-info-l" for="name">Name:</label>
+                        <input class="user-info-in" type="text" placeholder="Enter Name" id="name" name="name" required>
+                        <br>
+                        <label class="user-info-l" for="email">Email:</label>
+                        <input class="user-info-in" type="text" placeholder="Enter Email Address" id="email" name="email" required>
+                        <h2>Issue Description</h2>
+                        <h4>Select issue categories that apply:</h4>
+                        <input class="checkbox" type="checkbox" id="conn" name="conn" value="Connection issue">
+                        <label for="conn">Connection issue</label>
+                        <br>
+                        <input class="checkbox" type="checkbox" id="api" name="api" value="API issue">
+                        <label for="api">API issue</label>
+                        <br>
+                        <input class="checkbox" type="checkbox" id="other" name="other" value="Other issue">
+                        <label for="other">Other issue</label>
+                        <p>Please describe the issue. Include error mesages and unexpected system behavior. The technical team may need to contact you for more information.</p>
+                        <textarea id='description' placeholder="Enter Description" rows="8"></textarea>
+                        <br>
+                        <input type="submit" class="left-form-btn formBtn" value="Submit">
+                        <a href='#' onclick='closeModal()' class="right-form-btn formBtn" formnovalidate >Cancel Report</a>
+                        <a href='#' onclick="clearDesc()"  class="right-form-btn formBtn" formnovalidate>Clear Description</a>
+                    </form>
+                </div>
+            </div>
+            <div class="conf-modal">
+                <div class="conf">
+                    <div onclick='closeConf()' class="close">+</div>
+                    <h4>Your issue has been documented</h4>
+                </div>
             </div>
         </main>
         <footer>
             <table class="foot">
                 <tr id="firstrow">
                     <th>Contact Us</th>
-                    <td><a href="">Report an Issue</a></td>
-                    <td><a href="">Ask a Question</a></td>
+                    <td onclick='openModal()'><a href="#" id="open-form" class="button">Report an Issue</a></td>
+                    <td><a href="#">Ask a Question</a></td>
                 </tr>
                 <tr id="secrow">
                     <th>Privacy & Compliance</th>
-                    <td><a href="">GBA Privacy Policy</a></td>
-                    <td><a href="">Terms and Conditions</a></td>
+                    <td><a href="#">GBA Privacy Policy</a></td>
+                    <td><a href="#">Terms and Conditions</a></td>
                 </tr>
                 <tr id="thirdrow">
                     <td colspan="3">© Copyright Government Blockchain Association 2021</td>

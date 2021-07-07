@@ -5,8 +5,8 @@
         <link rel="stylesheet" type="text/css" href="maGBBP.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600;700;800&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
-        <script type="text/javascript" src="maiGBBP.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;500;600;700;800&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+        <script defer type="text/javascript" src="maiGBBP.js"></script>
     </head>
     <body>
         <header>
@@ -17,8 +17,8 @@
                         <div class="dropdown">
                             <button class="dropbtn">GBBP Node Managers</button>
                             <div class="dropcn">
-                                <a href="">Filler</a>
-                                <a href="">Filler</a>
+                                <a href="#">Filler</a>
+                                <a href="#">Filler</a>
                             </div>
                         </div>
                     </li>
@@ -26,8 +26,8 @@
                         <div class="dropdown">
                             <button class="dropbtn">Developers</button>
                             <div class="dropcn">
-                                <a href="">Filler</a>
-                                <a href="">Filler</a>
+                                <a href="#">Filler</a>
+                                <a href="#">Filler</a>
                             </div>
                         </div>
                     </li>
@@ -42,12 +42,12 @@
                     <img src="TempPics/GStart.PNG">
                     <figcaption>Platform Start Guide</figcaption>
                 </figure></a></li>
-                <li><a href=""><figure>
+                <li><a href="#"><figure>
                     <img src="TempPics/GTut.PNG">
                     
                     <figcaption>Documentation and Tutorials</figcaption>
                 </figure></a></li>
-                <li><a href=""><figure>
+                <li><a href="#"><figure>
                     <img src="TempPics/GDown.PNG">
                     <figcaption>Tools and Downloads</figcaption>
                 </figure></a></li>
@@ -76,58 +76,64 @@
                 <p>If you are a developer and interested in Blockchain and smart contract deployment on the GBBP, join our Discord group.</p>
             </div>
             <ul class="contacts">
-                <li><a href=""><figure>
+                <li><a href="#"><figure>
                     <img src="TempPics/GTwitter.png">
                     <figcaption>Twitter</figcaption>
                 </figure></a></li>
-                <li><a href=""><figure>
+                <li><a href="#"><figure>
                     <img src="TempPics/GDiscord.png">
                     <figcaption>Discord</figcaption>
                 </figure></a></li>
-                <li><a href=""><figure>
+                <li><a href="#"><figure>
                     <img src="TempPics/GFacebook.png">
                     <figcaption>FaceBook</figcaption>
                 </figure></a></li>
-                <li><a href=""><figure>
+                <li><a href="#"><figure>
                     <img src="TempPics/GTelegram.png">
                     <figcaption>Telegram</figcaption>
                 </figure></a></li>
-                <li><a href=""><figure>
+                <li><a href="#"><figure>
                     <img src="TempPics/GYoutube.png">
                     <figcaption>Youtube</figcaption>
                 </figure></a></li>
-                <li><a href=""><figure>
+                <li><a href="#"><figure>
                     <img src="TempPics/GGithub.png">
                     <figcaption>Github</figcaption>
                 </figure></a></li>
             </ul>
             <div class="iss-modal">
                 <div class="modal-con">
-                    <div class="close">+</div>
-                    <form action="">
+                    <div onclick='closeModal()' class="close">+</div>
+                    <form onsubmit='event.preventDefault(); handleSubmit()' id='form' action="">
                         <h2>User Information</h2>
                         <label class="user-info-l" for="name">Name:</label>
-                        <input class="user-info-in" type="text" placeholder="Enter Name" name="name" required>
+                        <input class="user-info-in" type="text" placeholder="Enter Name" id="name" name="name" required>
                         <br>
                         <label class="user-info-l" for="email">Email:</label>
-                        <input class="user-info-in" type="text" placeholder="Enter Email Address" name="email" required>
+                        <input class="user-info-in" type="text" placeholder="Enter Email Address" id="email" name="email" required>
                         <h2>Issue Description</h2>
                         <h4>Select issue categories that apply:</h4>
-                        <input class="checkbox" type="checkbox" name="conn" value="Connection issue">
+                        <input class="checkbox" type="checkbox" id="conn" name="conn" value="Connection issue">
                         <label for="conn">Connection issue</label>
                         <br>
-                        <input class="checkbox" type="checkbox" name="api" value="API issue">
+                        <input class="checkbox" type="checkbox" id="api" name="api" value="API issue">
                         <label for="api">API issue</label>
                         <br>
-                        <input class="checkbox" type="checkbox" name="other" value="Other issue">
+                        <input class="checkbox" type="checkbox" id="other" name="other" value="Other issue">
                         <label for="other">Other issue</label>
-                        <p>Please describe the issue. Include error meesages and unexpected system behavior. The technical team may need to contact you for more information.</p>
-                        <textarea placeholder="Enter Description" rows="8"></textarea>
+                        <p>Please describe the issue. Include error mesages and unexpected system behavior. The technical team may need to contact you for more information.</p>
+                        <textarea id='description' placeholder="Enter Description" rows="8"></textarea>
                         <br>
-                        <button type="submit" class="left-form-btn">Submit</button>
-                        <button type="submit" class="right-form-btn">Clear Description</button>
-                        <button type="submit" class="right-form-btn">Cancel Report</button>
+                        <input type="submit" class="left-form-btn formBtn" value="Submit">
+                        <a href='#' onclick='closeModal()' class="right-form-btn formBtn" formnovalidate >Cancel Report</a>
+                        <a href='#' onclick="clearDesc()"  class="right-form-btn formBtn" formnovalidate>Clear Description</a>
                     </form>
+                </div>
+            </div>
+            <div class="conf-modal">
+                <div class="conf">
+                    <div onclick='closeConf()' class="close">+</div>
+                    <h4>Your issue has been documented</h4>
                 </div>
             </div>
         </main>
@@ -135,13 +141,13 @@
             <table class="foot">
                 <tr id="firstrow">
                     <th>Contact Us</th>
-                    <td><a href="#" id="open-form" class="button">Report an Issue</a></td>
-                    <td><a href="">Ask a Question</a></td>
+                    <td onclick='openModal()'><a href="#" id="open-form" class="button">Report an Issue</a></td>
+                    <td><a href="#">Ask a Question</a></td>
                 </tr>
                 <tr id="secrow">
                     <th>Privacy & Compliance</th>
-                    <td><a href="">GBA Privacy Policy</a></td>
-                    <td><a href="">Terms and Conditions</a></td>
+                    <td><a href="#">GBA Privacy Policy</a></td>
+                    <td><a href="#">Terms and Conditions</a></td>
                 </tr>
                 <tr id="thirdrow">
                     <td colspan="3">© Copyright Government Blockchain Association 2021</td>
