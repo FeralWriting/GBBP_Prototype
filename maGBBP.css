@@ -159,6 +159,75 @@ h2 {
     text-decoration: underline;
 }
 
+.iss-modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-con {
+    width: 700px;
+    height: 600px;
+    background-color: white;
+    border-radius: 7px;
+    position: relative;
+}
+
+.modal-con h2 {
+    margin: 15px 10px;
+}
+
+.modal-con h4 {
+    margin: 0px 0px 10px 10px;
+}
+
+.modal-con p {
+    margin: 10px 10px 5px 10px;
+}
+
+.modal-con textarea {
+    margin: 5px 10px;
+    width: 100%;
+}
+
+.modal-con button {
+    display: inline-block;
+}
+
+.modal-con .user-info-l {
+    margin: 10px 5px 10px 10px;
+}
+
+.modal-con .user-info-in {
+    margin: 10px 0px 10px 0px;
+}
+
+.modal-con .checkbox {
+    margin-left: 10px;
+}
+
+.modal-con .left-form-btn {
+    margin-left: 10px;
+}
+
+.modal-con .right-form-btn {
+    float: right;
+    margin-right: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 36px;
+    transform: rotate(45deg);
+}
+
 .foot {
     margin-right: 0px;
     margin-left: 0px;

@@ -6,6 +6,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600;700;800&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="maiGBBP.js"></script>
     </head>
     <body>
         <header>
@@ -100,12 +101,41 @@
                     <figcaption>Github</figcaption>
                 </figure></a></li>
             </ul>
+            <div class="iss-modal">
+                <div class="modal-con">
+                    <div class="close">+</div>
+                    <form action="">
+                        <h2>User Information</h2>
+                        <label class="user-info-l" for="name">Name:</label>
+                        <input class="user-info-in" type="text" placeholder="Enter Name" name="name" required>
+                        <br>
+                        <label class="user-info-l" for="email">Email:</label>
+                        <input class="user-info-in" type="text" placeholder="Enter Email Address" name="email" required>
+                        <h2>Issue Description</h2>
+                        <h4>Select issue categories that apply:</h4>
+                        <input class="checkbox" type="checkbox" name="conn" value="Connection issue">
+                        <label for="conn">Connection issue</label>
+                        <br>
+                        <input class="checkbox" type="checkbox" name="api" value="API issue">
+                        <label for="api">API issue</label>
+                        <br>
+                        <input class="checkbox" type="checkbox" name="other" value="Other issue">
+                        <label for="other">Other issue</label>
+                        <p>Please describe the issue. Include error meesages and unexpected system behavior. The technical team may need to contact you for more information.</p>
+                        <textarea placeholder="Enter Description" rows="8"></textarea>
+                        <br>
+                        <button type="submit" class="left-form-btn">Submit</button>
+                        <button type="submit" class="right-form-btn">Clear Description</button>
+                        <button type="submit" class="right-form-btn">Cancel Report</button>
+                    </form>
+                </div>
+            </div>
         </main>
         <footer>
             <table class="foot">
                 <tr id="firstrow">
                     <th>Contact Us</th>
-                    <td><a href="">Report an Issue</a></td>
+                    <td><a href="#" id="open-form" class="button">Report an Issue</a></td>
                     <td><a href="">Ask a Question</a></td>
                 </tr>
                 <tr id="secrow">
