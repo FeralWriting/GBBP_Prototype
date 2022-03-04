@@ -2,7 +2,7 @@
 
 ## Overview
 
-Prototype of the Government Business Blockchain Platform Website. It would be a website for those developing and working with blockchain technologies within, or associated with, the [Government Blockchain Association](https://www.gbaglobal.org/gbbp/). This project just contains a basic layout of what the website would look like, so most of the info listed is filler text, images are filler as well, and, unless stated, links will go nowhere. The website contains a [Home](###-home-page) page and a [Platform Start Guide](###-platform-start-guide) page. This project incorporated HTML, CSS, and Javascript. This project gave me experience with web developement, web design, Visual Studio Code, tables, dropdown menus, forms, pop-ups, animation, and git. The website can be viewed [here](https://solstice-clumsy-stool.glitch.me).
+Prototype of the Government Business Blockchain Platform Website. It would be a website for those developing and working with blockchain technologies within, or associated with, the [Government Blockchain Association](https://www.gbaglobal.org/gbbp/). This project just contains a basic layout of what the website would look like, so most of the info listed is filler text, images are filler as well, and, unless stated, links will go nowhere. The website contains a [Home](###-home-page) page and a [Platform Start Guide](###-platform-start-guide) page. This project incorporated HTML, CSS, and Javascript. This project gave me experience with web developement, web design, Visual Studio Code, tables, dropdown menus, forms, pop-ups, animation, and git. The website can be viewed [here](https://solstice-clumsy-stool.glitch.me/mainGBBP.html).
 
 ## Features:
 
